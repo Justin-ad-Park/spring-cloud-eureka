@@ -6,10 +6,11 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
 How to run
- 	1. intelliJ : configure profile : ex) zone1
+ 	intelliJ : configure profile : ex) zone1
  		run ClientApplication
+ 	or
 
-	2. java -jar -DPORT:8081 -Dspring.profiles.active=zone1 sample-client-service-1.0-SNAPSHOT.jar
+	java -jar -DPORT:8081 -Dspring.profiles.active=zone1 sample-client-service-1.0-SNAPSHOT.jar . &
 
  */
 @SpringBootApplication
