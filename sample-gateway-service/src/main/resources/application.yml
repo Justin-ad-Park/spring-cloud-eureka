@@ -3,10 +3,10 @@ spring:
     name: gateway-service
 
 zuul:
-  prefix: /api
+  prefix: /api                # If you omit this parameter, root("/") is default.
   routes:
-    client: 
-      path: /client/**
+    client:
+      path: /client/**        # If you omit this parameter, "/client/**" is default.
       serviceId: client-service        
 
 ribbon:

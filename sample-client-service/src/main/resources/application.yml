@@ -2,6 +2,11 @@ spring:
   application:
     name: client-service
 
+eureka:
+  client:
+    registry-fetch-interval-seconds: 3
+    shouldDisableDelta: true
+
 ---
 spring:
   profiles: zone1

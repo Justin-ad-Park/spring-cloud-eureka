@@ -10,8 +10,9 @@ How to run
  		run ClientApplication
  	or
 
-	java -jar -DPORT:8081 -Dspring.profiles.active=zone1 sample-client-service-1.0-SNAPSHOT.jar . &
-
+	java -jar -Dspring.profiles.active=zone1 ~/idea/spring/mastering-spring-cloud-master/Chapter04/sample-spring-cloud-netflix-cluster/sample-client-service/target/sample-client-service-1.0-SNAPSHOT.jar . &
+ 	java -jar -Dspring.profiles.active=zone2 ~/idea/spring/mastering-spring-cloud-master/Chapter04/sample-spring-cloud-netflix-cluster/sample-client-service/target/sample-client-service-1.0-SNAPSHOT.jar . &
+ 	java -jar -Dspring.profiles.active=zone3 ~/idea/spring/mastering-spring-cloud-master/Chapter04/sample-spring-cloud-netflix-cluster/sample-client-service/target/sample-client-service-1.0-SNAPSHOT.jar . &
  */
 @SpringBootApplication
 @EnableDiscoveryClient

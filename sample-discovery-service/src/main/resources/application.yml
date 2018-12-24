@@ -1,7 +1,11 @@
 spring:  
   application:
     name: discovery-service
-    
+
+eureka:
+  server:
+    response-cache-update-interval-ms: 3000
+
 ---
 spring:
   profiles: peer1
